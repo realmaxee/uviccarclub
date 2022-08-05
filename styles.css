@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 100vh;
+}
+
+nav {
+    width:100%;
+    height: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.nav__link {
+    margin-right: 24px;
+    list-style: none;
+    font-size: 32px;
+}
+
+.header {
+    height: calc(100vh - 80px);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    margin-left: 24px;
+}
+
+.cars__divider--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.cars__divider {
+    width: 30%;
+}
