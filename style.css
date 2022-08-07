@@ -17,12 +17,12 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color:#464646;
-}
-
 h1, h2, h3, h4, h5, p, a {
     color: #242424;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 li {
@@ -35,11 +35,19 @@ li {
     margin: 0 auto;
 }
 
+
+
+.red__text {
+    color: #ec684d;
+}
+
+
+
 /* NAV */
 
 nav {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 80px;
     display: flex;
@@ -62,19 +70,34 @@ nav > ul > li {
     margin-right: 24px;
 }
 
-nav > ul > li > a {
+.nav__link {
     font-weight: bold;
     padding: 4px;
     border-radius: 8px;
-    border: 4px solid #242424;
-
 }
 
-nav > ul > li > a:hover {
+.nav__link:hover {
     color: #666666;
     border: 4px solid #666666;
-    transform: translateY(4px);
 }
+
+.nav__link--first {
+    color: #ec914d;
+    border: 4px solid #ec914d;
+}
+
+.nav__link--second {
+    color: #ecb54d;
+    border: 4px solid #ecb54d;
+}
+
+.nav__link--third {
+    color: #c6ec4d;
+    border: 4px solid #c6ec4d;
+
+}
+
+
 
 
 /* HEADER */
@@ -111,6 +134,69 @@ header {
     width: 30%;
 }
 
+/* DISCORD */
+
+#discord {
+    text-align: center;
+    font-size: 24px;
+}
+
+#discord > .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discord__desc--title {
+    margin-bottom: 24px;
+}
+
+.discord__desc--para {
+    margin-bottom: 24px;
+}
+
+.social__link {
+    width: 240px;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* INFO */
+
+#info {
+    text-align: center;
+    font-size: 24px;
+}
+
+#info * {
+    margin-bottom: 24px;
+}
+
+/* MEETS */
+
+#meets {
+    text-align: center;
+    font-size: 24px;
+}
+
+#meets * {
+    margin-bottom: 24px;
+}
+
+.meet__images {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meet__img {
+    height: 192px;
+    width: 240px;
+}
+
 
 /* FOOTER */
 footer {
@@ -123,7 +209,8 @@ footer {
 
 footer * {
     color: #fafafa;
-    font-size: 48px;
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 

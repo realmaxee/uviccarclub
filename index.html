@@ -6,84 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UVIC Car Club</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/bc447cdc11.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav>
         <figure>
-            <img src="./assets/logo_smol.png" alt="">
+          <img src="./assets/logo_smol.png" alt="" />
         </figure>
         <ul>
           <li>
-            <a href="#discord">Discord</a>
+            <a href="#discord" class="nav__link nav__link--third">Join</a>
           </li>
           <li>
-            <a href="#info">Info</a>
+            <a href="#info" class="nav__link nav__link--second">Info</a>
           </li>
           <li>
-            <a href="#meets">Meets</a>
+            <a href="#meets" class="nav__link nav__link--first">Meets</a>
           </li>
         </ul>
       </nav>
       <div class="header__desc">
         <div class="row">
-            <h1>UVIC Car Club</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio
-          neque consequatur culpa, nostrum saepe omnis unde possimus incidunt
-          commodi corrupti iste deleniti aliquid voluptatum corporis obcaecati
-          sequi dolorem maxime.
-        </p></div>
-        
+          <h1 class="red__text">UVIC Car Club</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio
+            neque consequatur culpa, nostrum saepe omnis unde possimus incidunt
+            commodi corrupti iste deleniti aliquid voluptatum corporis obcaecati
+            sequi dolorem maxime.
+          </p>
+        </div>
       </div>
       <div class="header__cars--wrapper">
         <figure class="header__car">
-            <img src="./assets/car 2.png" alt="">
+          <img src="./assets/car 2.png" alt="" />
         </figure>
         <figure class="header__car">
-            <img src="./assets/car 3.png" alt="">
+          <img src="./assets/car 3.png" alt="" />
         </figure>
         <figure class="header__car">
-            <img src="./assets/car 5.png" alt="">
+          <img src="./assets/car 5.png" alt="" />
         </figure>
       </div>
     </header>
+
     <main>
       <section id="discord">
         <div class="row">
-            <h1>discord</h1>
+          <h1 class="red__text discord__desc--title">Join the Club!</h1>
+          <p class="discord__desc--para">
+            The best way to get to know the club and hear about upcoming events
+            is by joining the
+            <a class="bold" href="https://discord.gg/vq6PnAuVHB"
+              >UVCC Discord server!</a
+            >
+            You can also follow the
+            <a class="bold" href="">Instagram</a> and the
+            <a class="bold" href="">Facebook Group</a> for announcements of
+            upcoming car meets.
+          </p>
+          <div class="social__link nav__link--first">
+            <i class="fab fa-discord"></i>
+            <a class="bold" href="https://discord.gg/vq6PnAuVHB">Discord server</a>
+          </div>
+          <div class="social__link nav__link--second">
+            <i class="fab fa-square-instagram"></i>
+            <a class="bold" href="https://www.instagram.com/uviccarclub/">Instagram</a>
+          </div>
+          <div class="social__link nav__link--third">
+            <i class="fab fa-square-facebook"></i>
+            <a class="bold" href="https://www.facebook.com/groups/uviccarclub/">Facebook group</a>
+          </div>
         </div>
-        
       </section>
+
       <section id="info">
         <div class="row">
-            <h1>info</h1>
+          <h1 class="red__text">Who are we?</h1>
+          <p>The <span class="bold">UVIC Car Club</span> was made to bring together all automobile fanatics - sportscars, offroaders, motorcyclists, and more. We generally host meets 1-2 times a month, and often organize cruises to other meets in <span class="bold">Victoria</span>.</p>
         </div>
-        
       </section>
+
       <section id="meets">
         <div class="row">
-            <h1>meets</h1>
+          <h1 class="red__text">Some of our past meets:</h1>
+          <div class="meet__images">
+            <figure class="meet__img">
+              <img src="./assets/meet5.jpg" alt="">
+            </figure>
+            <figure class="meet__img">
+              <img src="./assets/meet2.jpg" alt="">
+            </figure>
+            <figure class="meet__img">
+              <img src="./assets/meet3.jpg" alt="">
+            </figure>
+            <figure class="meet__img">
+              <img src="./assets/meet4.jpg" alt="">
+            </figure>
+            <figure class="meet__img">
+              <img src="./assets/meet1.jpg" alt="">
+            </figure>
+            <figure class="meet__img">
+              <img src="./assets/meet6.jpg" alt="">
+            </figure>
+          </div>
         </div>
-        
       </section>
     </main>
+
     <footer>
-        <ul>
-            <li>
-              <a href="#discord">Discord</a>
-            </li>
-            <li>
-              <a href="#info">Info</a>
-            </li>
-            <li>
-              <a href="#meets">Meets</a>
-            </li>
-            <li>
-                <a href="./sitemap.html">sitemap</a>
-            </li>
-          </ul>
-        
+      <ul>
+        <li>
+          <a href="#discord">Discord</a>
+        </li>
+        <li>
+          <a href="#info">Info</a>
+        </li>
+        <li>
+          <a href="#meets">Meets</a>
+        </li>
+        <li>
+          <a href="./links.html">Social Media Links</a>
+        </li>
+        <li>
+          <a href="./sitemap.html">Site Map</a>
+        </li>
+      </ul>
+
       <h1>&copy; 2022 UVIC Car Club</h1>
     </footer>
   </body>
