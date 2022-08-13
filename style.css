@@ -33,6 +33,7 @@ li {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 
@@ -59,6 +60,7 @@ nav {
 nav > figure {
     margin-left: 24px;
     max-width: 156px;
+    max-height: 84px;
 }
 
 nav > ul {
@@ -188,13 +190,20 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .meet__img {
-    height: 192px;
-    width: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.meet__img img {
+    object-fit: cover;
 }
 
 
@@ -218,6 +227,11 @@ footer * {
 @media screen and (max-width:768px) {
     nav {
         flex-direction: column;
+
+    }
+
+    nav > figure {
+        height: 84px !important;
     }
 
     nav > ul {
